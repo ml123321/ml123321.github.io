@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>匿名函数 | 马磊的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="Ma Lei's Blog">
+  
+  <meta name="description" content="0.什么是函数 ,什么是使用函数 都实现某一特定功能的代码段的封装  1.函数的声明12345&amp;quot;&amp;quot;&amp;quot;def 函数名 (参数列表):    &amp;quot;&amp;quot;&amp;quot;函数说明文档&amp;quot;&amp;quot;&amp;quot;    函数体&amp;quot;&amp;quot;&amp;quot;  2.函数的调用12&amp;quot;&amp;quot;&amp;quot;1) 语法: 函数名(实参列表)  2)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="匿名函数">
+<meta property="og:url" content="http://aiswl.cn/2019/06/02/什么是函数/index.html">
+<meta property="og:site_name" content="马磊的博客">
+<meta property="og:description" content="0.什么是函数 ,什么是使用函数 都实现某一特定功能的代码段的封装  1.函数的声明12345&amp;quot;&amp;quot;&amp;quot;def 函数名 (参数列表):    &amp;quot;&amp;quot;&amp;quot;函数说明文档&amp;quot;&amp;quot;&amp;quot;    函数体&amp;quot;&amp;quot;&amp;quot;  2.函数的调用12&amp;quot;&amp;quot;&amp;quot;1) 语法: 函数名(实参列表)  2)">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-06-02T09:27:57.570Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="匿名函数">
+<meta name="twitter:description" content="0.什么是函数 ,什么是使用函数 都实现某一特定功能的代码段的封装  1.函数的声明12345&amp;quot;&amp;quot;&amp;quot;def 函数名 (参数列表):    &amp;quot;&amp;quot;&amp;quot;函数说明文档&amp;quot;&amp;quot;&amp;quot;    函数体&amp;quot;&amp;quot;&amp;quot;  2.函数的调用12&amp;quot;&amp;quot;&amp;quot;1) 语法: 函数名(实参列表)  2)">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+</html>
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">Ma Lei&#39;s Blog</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a href="/">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    
+                    <a href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>Archives</span>
+                    </a>
+                    
+                    <a href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        Ma Lei&#39;s Blog
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        每一个不曾起舞的日子 都是对生命的辜负
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="MinHow" target="_blank" href="//minhow.com">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="//github.com/wongminho">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="Weibo" target="_blank" href="//weibo.com/WongMinHo">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                        <a title="Twitter" target="_blank" href="//twitter.com/huangminhow">
+                            <i class="fa fa-twitter fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-什么是函数" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      匿名函数
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2019-06-02
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <h1 id="0-什么是函数-什么是使用函数"><a href="#0-什么是函数-什么是使用函数" class="headerlink" title="0.什么是函数 ,什么是使用函数"></a>0.什么是函数 ,什么是使用函数</h1><ul>
+<li>都实现某一特定功能的代码段的封装</li>
+</ul>
+<h1 id="1-函数的声明"><a href="#1-函数的声明" class="headerlink" title="1.函数的声明"></a>1.函数的声明</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&quot;&quot;&quot;</span><br><span class="line">def 函数名 (参数列表):</span><br><span class="line">    &quot;&quot;&quot;函数说明文档&quot;&quot;&quot;</span><br><span class="line">    函数体</span><br><span class="line">&quot;&quot;&quot;</span><br></pre></td></tr></table></figure>
+
+<h1 id="2-函数的调用"><a href="#2-函数的调用" class="headerlink" title="2.函数的调用"></a>2.函数的调用</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&quot;&quot;&quot;</span><br><span class="line">1) 语法: 函数名(实参列表)</span><br></pre></td></tr></table></figure>
+
+<p>2) 调用过程:(重点!!!!)<br>回到函数的位置<br>让实参给形参传值 - 保证每个 参数都有值<br>执行函数体<br>确认返回值 - 看执行函数的时候有没有遇到  return 遇到了return 后面是什么返回值就是什么<br>            没有遇到return  后面就是None<br>回到函数调用的位置,接着网名执行 - 这个时候函数调用的返回值才是函数的返回值</p>
+<p>“””</p>
+<h1 id="3-函数的参数"><a href="#3-函数的参数" class="headerlink" title="3.函数的参数"></a>3.函数的参数</h1><p>“””</p>
+<ul>
+<li><p>1)位置参数和关键字参数<br>注意:两个同时存在的时候 位置参数要在关键字参数的前面</p>
+</li>
+<li><p>2) 参数的默认值<br>注意:没有默认值的要放到前面</p>
+</li>
+<li><p>3)参数类型的说明:给参数赋默认值,形参名;类型</p>
+</li>
+<li><p>4) 不定长参数</p>
+</li>
+</ul>
+<p><em>参数名  - 参数变成元祖   -  只能用位置参数传参<br>*</em>参数名 - 参数变成字典 -   给这个参数赋值只能关键字参数赋值</p>
+<p>“””</p>
+<h1 id="4-返回值"><a href="#4-返回值" class="headerlink" title="4.返回值"></a>4.返回值</h1><p>“””</p>
+<ul>
+<li>1) 怎么确定函数的返回值(见函数调用过程)</li>
+<li>2) 怎么获取函数的返回值(通过获取函数调用表达式的值)</li>
+<li>3) 声明函数的时候,什么时候需要函数的返回值;把谁作为函数的返回值(看会不会产生新的数据)</li>
+</ul>
+<h1 id="1-什么是匿名函数"><a href="#1-什么是匿名函数" class="headerlink" title="1.什么是匿名函数"></a>1.什么是匿名函数</h1><ul>
+<li>没有函数名的函数就是匿名函数 (匿名函数还是函数!!!!!!)</li>
+</ul>
+<h1 id="2-语法"><a href="#2-语法" class="headerlink" title="2.语法"></a>2.语法</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&quot;&quot;&quot;</span><br><span class="line">变量名  =  lambad 形参列表 : 返回值</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>说明: lambda   - 关键字 ,固定写法<pre><code>形参列表 - 和普通函数的形参列表是一样的 . 变量名1,变量名2,(可设置默认值,)
+          (参数相关的语法中(除了不可以通过 : 说明类型名以外),其他语法都可以)
+:       - 固定写法
+ - 返回值  -   相当于普通函数中return后面的语句</code></pre></li>
+</ul>
+<ul>
+<li><p>!! :只有 一条代码的函数 才能转换成 匿名函数</p>
+</li>
+<li><p>注意:匿名函数做的事情普通函数都能做,但是多行代码的普通函数,匿名函数没法实现<br>“””</p>
+</li>
+</ul>
+<h1 id="3-调用-和普通函数一样"><a href="#3-调用-和普通函数一样" class="headerlink" title="3.调用  (和普通函数一样)"></a>3.调用  (和普通函数一样)</h1><ul>
+<li>函数(实参列表)  — 函数不一定是函数名 可以通过任何方式获取到的类型的function的值</li>
+<li>python 中,声明函数可以看成是声明类型是function的变量,</li>
+<li>匿名函数可以看成是function类型的数据,(类似100是int类型的数据)<h5 id="变量名-lambda-参数列表-返回值-—-通过变量名-来调用匿名函数"><a href="#变量名-lambda-参数列表-返回值-—-通过变量名-来调用匿名函数" class="headerlink" title="变量名 = lambda 参数列表 : 返回值   — 通过变量名() 来调用匿名函数"></a>变量名 = lambda 参数列表 : 返回值   — 通过变量名() 来调用匿名函数</h5></li>
+</ul>
+<h1 id="函数作为变量-重点"><a href="#函数作为变量-重点" class="headerlink" title="=== 函数作为变量(重点!!!!)"></a>=== 函数作为变量(重点!!!!)</h1><ul>
+<li>python 中声明函数其实就是声明类型是function的变量,函数名就是变量名.</li>
+<li>所有普通变量能做的事情函数都能做</li>
+</ul>
+<ul>
+<li><p>声明一个函数func1,有一个参数一个返回值;</p>
+</li>
+<li><p>func1 是类型是function的变量,他里面存的数据是一个函数,函数名叫func1 ,有一个参数n</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">def func1(n):</span><br><span class="line">    return n*n</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>2.普通变量能做到的函数都能做</p>
+</li>
+<li><p>1) 用一个变量给另外一个变量赋值<br>list1 = [1,2,3]<br>list2 = list1</p>
+</li>
+</ul>
+<ul>
+<li><p>2)变量可以作为列表或者元祖的元素,作为字典的值等</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">list1 = [1,2]</span><br><span class="line">dict1 = &#123;&apos;a&apos; : list1&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>3)变量作为函数的实参</p>
+<h1 id="将函数作为实参传递给另外一个函数-实参高阶函数"><a href="#将函数作为实参传递给另外一个函数-实参高阶函数" class="headerlink" title="!!!!  将函数作为实参传递给另外一个函数 (实参高阶函数)"></a>!!!!  将函数作为实参传递给另外一个函数 (实参高阶函数)</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">def dun4(a):</span><br><span class="line">    # a = print</span><br><span class="line">    a(&apos;abc&apos;)  #print(&apos;abc)</span><br><span class="line">    # a就是print了</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h1 id="应用-sort方法高级使用"><a href="#应用-sort方法高级使用" class="headerlink" title="应用 :sort方法高级使用"></a>应用 :sort方法高级使用</h1><ul>
+<li>列表.sort(key=)   -  key需要传一个类型是function的值(函数)要求有一个参数和一个返回值 参数指向的是列表中每个元素,返回值是排序的时候的比较对象<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">stu = [&#123;<span class="string">'mingzhi'</span>:<span class="string">'abc'</span>,<span class="string">'age'</span>:<span class="number">18</span>,<span class="string">'scorre'</span>:<span class="number">50</span>&#125;,</span><br><span class="line">       &#123;<span class="string">'mingzhi'</span>:<span class="string">'cde'</span>,<span class="string">'age'</span>:<span class="number">115</span>,<span class="string">'scorre'</span>:<span class="number">20</span>&#125;,</span><br><span class="line">       &#123;<span class="string">'mingzhi'</span>:<span class="string">'abt'</span>,<span class="string">'age'</span>:<span class="number">19</span>,<span class="string">'scorre'</span>:<span class="number">80</span>&#125;]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">stu.sort(key = <span class="keyword">lambda</span> item:item[<span class="string">'age'</span>])</span><br><span class="line">print(stu)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">x1</span><span class="params">(x2)</span>:</span>    <span class="comment"># x2 是列表 字典里的每一个 元素</span></span><br><span class="line">    <span class="keyword">return</span> x2[<span class="string">'scorre'</span>]   <span class="comment"># 返回值 每一个字典的  'scorre' 值</span></span><br><span class="line"></span><br><span class="line">stu.sort(key = x1)      <span class="comment">#   调用函数   x1   就是 字典的socorre的值</span></span><br><span class="line">print(stu)</span><br><span class="line"></span><br><span class="line">stu.sort(key = <span class="keyword">lambda</span> item:item[<span class="string">'mingzhi'</span>][<span class="number">-1</span>])</span><br><span class="line">print(stu)</span><br><span class="line"></span><br><span class="line">print(max([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">7</span>],key = <span class="keyword">lambda</span> x : int(x)))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 尝试实现自己的max 函数</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">yt_max</span><span class="params">(seq,key = None)</span>:</span></span><br><span class="line">    <span class="string">"""求一个序列的最大值"""</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># max1 =</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h1 id="4-变量作为函数的返回值"><a href="#4-变量作为函数的返回值" class="headerlink" title="4) 变量作为函数的返回值"></a>4) 变量作为函数的返回值</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"># 读程序</span><br><span class="line">list3 = []</span><br><span class="line">for i in range(5):</span><br><span class="line">    list3.append(lambda x: x*i)</span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line">list = []</span><br><span class="line">i = 0  </span><br><span class="line"></span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line"></span><br><span class="line">list3[3](3)   #12</span><br><span class="line">list3[0](3)    #12</span><br><span class="line">list3[2](3)   #12</span><br></pre></td></tr></table></figure>
+
+<h1 id="1-作用域-变量的使用范围"><a href="#1-作用域-变量的使用范围" class="headerlink" title="1.作用域 ;变量的使用范围"></a>1.作用域 ;变量的使用范围</h1><h1 id="2-全局变量和局部变量"><a href="#2-全局变量和局部变量" class="headerlink" title="2.全局变量和局部变量"></a>2.全局变量和局部变量</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">&quot;&quot;&quot;</span><br><span class="line">a.全局变量:python中除了在函数中或者类声明的变量,都是局部变量.</span><br><span class="line">        全局变量的作用域:从声明开始到文件结束的然后位置都可以使用</span><br><span class="line"></span><br><span class="line">b.局部变量:在函数中声明变量就是局部变量.</span><br><span class="line">        从声明开始到函数结束都可以使用</span><br><span class="line"></span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># ==============局部变量=============</span><br><span class="line">def func2(m1):</span><br><span class="line">    #形参 m1  是局部变量</span><br><span class="line">    print(m1)</span><br><span class="line">    m2 = 200</span><br><span class="line">    print(m2)</span><br><span class="line"></span><br><span class="line">print()</span><br><span class="line"></span><br><span class="line">aa = 100</span><br><span class="line"></span><br><span class="line">def dunc11():</span><br><span class="line">    #不能在函数中直接修改一个全局变量的值,而是重新声明一个新的局部变量</span><br><span class="line">    aa = 200</span><br><span class="line">    print(aa</span><br><span class="line"></span><br><span class="line"># 3.global和nonlocal</span><br><span class="line"># global:想要在一个函数中修改一个全局变量的值,或者想要在函数中声明一个全局变量</span><br><span class="line"></span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line">1) global:想要在一个函数中修改一个全局变量的值,或者想要在函数中声明一个全局变量</span><br><span class="line">global 变量名</span><br><span class="line">变量名 = 值</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">nonlocal : 局部的局部中修改一个局部的值</span><br><span class="line"></span><br><span class="line">nonlocal 变量名</span><br><span class="line">变量名 = 值</span><br><span class="line"></span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line">def qq():</span><br></pre></td></tr></table></figure>
+
+
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2019年06月02日 17:27</p>
+        <p>原始链接： <a class="post-url" href="/2019/06/02/什么是函数/" title="匿名函数">http://aiswl.cn/2019/06/02/什么是函数/</a></p>
+        <footer>
+            <a href="http://aiswl.cn">
+                <img src="/images/logo.png" alt="ml">
+                ml
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+        
+            
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;">赏</a>
+</div>
+
+<div id="reward" class="post-modal reward-lay">
+    <a class="close" href="javascript:;" id="reward-close">×</a>
+    <span class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        请我吃糖~
+        <i class="icon icon-quote-right"></i>
+    </span>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/images/wechat_code.jpg" alt="打赏二维码">
+        </div>
+        <div class="reward-select">
+            
+            <label class="reward-select-item checked" data-id="wechat" data-wechat="/images/wechat_code.jpg">
+                <img class="reward-select-item-wechat" src="/images/wechat.png" alt="微信">
+            </label>
+            
+            
+            <label class="reward-select-item" data-id="alipay" data-alipay="/images/alipay_code.jpg">
+                <img class="reward-select-item-alipay" src="/images/alipay.png" alt="支付宝">
+            </label>
+            
+        </div>
+    </div>
+</div>
+
+
+        
+    </div>
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://aiswl.cn/2019/06/02/什么是函数/&title=《匿名函数》 — 马磊的博客&pic=http://aiswl.cnimages/logo.png" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://aiswl.cn/2019/06/02/什么是函数/&title=《匿名函数》 — 马磊的博客&source=" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://aiswl.cn/2019/06/02/什么是函数/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《匿名函数》 — 马磊的博客&url=http://aiswl.cn/2019/06/02/什么是函数/&via=http://aiswl.cn" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://aiswl.cn/2019/06/02/什么是函数/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://aiswl.cn/2019/06/02/什么是函数/" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#0-什么是函数-什么是使用函数"><span class="post-toc-text">0.什么是函数 ,什么是使用函数</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#1-函数的声明"><span class="post-toc-text">1.函数的声明</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#2-函数的调用"><span class="post-toc-text">2.函数的调用</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#3-函数的参数"><span class="post-toc-text">3.函数的参数</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#4-返回值"><span class="post-toc-text">4.返回值</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#1-什么是匿名函数"><span class="post-toc-text">1.什么是匿名函数</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#2-语法"><span class="post-toc-text">2.语法</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#3-调用-和普通函数一样"><span class="post-toc-text">3.调用  (和普通函数一样)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#变量名-lambda-参数列表-返回值-—-通过变量名-来调用匿名函数"><span class="post-toc-text">变量名 = lambda 参数列表 : 返回值   — 通过变量名() 来调用匿名函数</span></a></li></ol></li></ol><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#函数作为变量-重点"><span class="post-toc-text">=== 函数作为变量(重点!!!!)</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#将函数作为实参传递给另外一个函数-实参高阶函数"><span class="post-toc-text">!!!!  将函数作为实参传递给另外一个函数 (实参高阶函数)</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#应用-sort方法高级使用"><span class="post-toc-text">应用 :sort方法高级使用</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#4-变量作为函数的返回值"><span class="post-toc-text">4) 变量作为函数的返回值</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#1-作用域-变量的使用范围"><span class="post-toc-text">1.作用域 ;变量的使用范围</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#2-全局变量和局部变量"><span class="post-toc-text">2.全局变量和局部变量</span></a></li>
+        </nav>
+    </aside>
+    
+
+<nav id="article-nav">
+  
+  
+    <a href="/2019/06/02/1.什么是函数/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">什么是函数</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style="display:none">
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style="display:none">
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2019 ml<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "http://aiswl.cn",
+      animate: true,
+      isHome: false,
+      share: true,
+      reward: 1
+  }
+</script>
+<div class="sidebar">
+    <div id="sidebar-search" title="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div id="sidebar-category" title="Categories">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag" title="Tags">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            
+        </div>
+        <div id="sidebar-menu-box-tags">
+            
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div class="mobile-header-menu-container">
+        <span class="title">Menus</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a href="/">
+                    <i class="fa fa-home"></i><span>Home</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="/archives">
+                    <i class="fa fa-archive"></i><span>Archives</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="/about">
+                    <i class="fa fa-user"></i><span>About</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile-header-tag-container">
+        <span class="title">Tags</span>
+        <div id="mobile-header-container-tags">
+            
+        </div>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+
+  <script src="/js/pop-img.js"></script>
+  <script>
+     $(".article-entry p img").popImg();
+  </script>
+
+  </div>
+</body>
+</html>

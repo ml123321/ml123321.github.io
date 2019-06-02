@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>什么是函数 | 马磊的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="Ma Lei's Blog">
+  
+  <meta name="description" content="1.什么是函数 函数就是对实现对某一特定功能的代码段的封装 2.函数的分类 内置函数(系统函数)：python已经实现的函数，程序员直接用，例如：print（）等等  相当于系统造好的机器  自定义函数：程序员自己定义的函数，相当于自己造机器，  3. 函数的定义(声明)123456789101112131415161718192021222324252627281）语法：def 函数名(参数列表">
+<meta property="og:type" content="article">
+<meta property="og:title" content="什么是函数">
+<meta property="og:url" content="http://aiswl.cn/2019/06/02/1.什么是函数/index.html">
+<meta property="og:site_name" content="马磊的博客">
+<meta property="og:description" content="1.什么是函数 函数就是对实现对某一特定功能的代码段的封装 2.函数的分类 内置函数(系统函数)：python已经实现的函数，程序员直接用，例如：print（）等等  相当于系统造好的机器  自定义函数：程序员自己定义的函数，相当于自己造机器，  3. 函数的定义(声明)123456789101112131415161718192021222324252627281）语法：def 函数名(参数列表">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-06-02T09:25:08.060Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="什么是函数">
+<meta name="twitter:description" content="1.什么是函数 函数就是对实现对某一特定功能的代码段的封装 2.函数的分类 内置函数(系统函数)：python已经实现的函数，程序员直接用，例如：print（）等等  相当于系统造好的机器  自定义函数：程序员自己定义的函数，相当于自己造机器，  3. 函数的定义(声明)123456789101112131415161718192021222324252627281）语法：def 函数名(参数列表">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+</html>
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">Ma Lei&#39;s Blog</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a href="/">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    
+                    <a href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>Archives</span>
+                    </a>
+                    
+                    <a href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        Ma Lei&#39;s Blog
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        每一个不曾起舞的日子 都是对生命的辜负
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="MinHow" target="_blank" href="//minhow.com">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="//github.com/wongminho">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="Weibo" target="_blank" href="//weibo.com/WongMinHo">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                        <a title="Twitter" target="_blank" href="//twitter.com/huangminhow">
+                            <i class="fa fa-twitter fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-1.什么是函数" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      什么是函数
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2019-06-02
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <h1 id="1-什么是函数"><a href="#1-什么是函数" class="headerlink" title="1.什么是函数"></a>1.什么是函数</h1><ul>
+<li><p>函数就是对实现对某一特定功能的代码段的封装</p>
+<h1 id="2-函数的分类"><a href="#2-函数的分类" class="headerlink" title="2.函数的分类"></a>2.函数的分类</h1></li>
+<li><p>内置函数(系统函数)：python已经实现的函数，程序员直接用，例如：print（）等等</p>
+</li>
+<li><p>相当于系统造好的机器</p>
+</li>
+<li><h1 id="自定义函数：程序员自己定义的函数，相当于自己造机器，"><a href="#自定义函数：程序员自己定义的函数，相当于自己造机器，" class="headerlink" title="自定义函数：程序员自己定义的函数，相当于自己造机器，"></a>自定义函数：程序员自己定义的函数，相当于自己造机器，</h1></li>
+</ul>
+<h1 id="3-函数的定义-声明"><a href="#3-函数的定义-声明" class="headerlink" title="3. 函数的定义(声明)"></a>3. 函数的定义(声明)</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">1）语法：</span><br><span class="line">def 函数名(参数列表):</span><br><span class="line">    函数体</span><br><span class="line"></span><br><span class="line">2）说明：</span><br><span class="line">def - 声明函数的关键字，固定写法</span><br><span class="line">函数名 - 要求：标识符不能是关键字</span><br><span class="line">        规范：见名知意(看到函数名大概知道函数的功能)</span><br><span class="line">        所有的字母用小写，多个单词用_隔开，不能和系统的函数名重名</span><br><span class="line"></span><br><span class="line">()  -  固定写法</span><br><span class="line">参数列表  - 形参1,形参2,形参3，，，，，;这儿的参数形参，可以有可以没有，可以有多个</span><br><span class="line">            变量名1，变量名2，变量名3，，，这儿的参数形参，可以有可以没有，可以有多个</span><br><span class="line">            形参的功能是将外面的数据传递到函数里面</span><br><span class="line"></span><br><span class="line">: -  固定写法</span><br><span class="line">函数体 -  必须和def保持一个缩进的代码段：</span><br><span class="line">        函数体分为函数说明文档和，实现函数功能的代码段两个部分</span><br><span class="line"></span><br><span class="line">3）初学者声明函数的步骤：</span><br><span class="line">第一步：确定函数的功能</span><br><span class="line">第二步：根据功能确定函数的名字</span><br><span class="line">第三步： 确定参数(就是确定需不需要参数，需要几个参数)</span><br><span class="line">        看实现函数的功能，需不需要从函数外面传值，如果需要，需要几个</span><br><span class="line">第四步：实现函数的功能</span><br><span class="line"></span><br><span class="line">第五步：确定返回值（暂时不管）</span><br></pre></td></tr></table></figure>
+
+<h1 id="4-函数体在函数声明的时候不会执行（重要）"><a href="#4-函数体在函数声明的时候不会执行（重要）" class="headerlink" title="!!! 4.函数体在函数声明的时候不会执行（重要）"></a>!!! 4.函数体在函数声明的时候不会执行（重要）</h1><ul>
+<li><h1 id="调用函数的时候才会执行函数体"><a href="#调用函数的时候才会执行函数体" class="headerlink" title="调用函数的时候才会执行函数体"></a>调用函数的时候才会执行函数体</h1><h1 id="5-函数调用-使用机器"><a href="#5-函数调用-使用机器" class="headerlink" title="5.函数调用 - 使用机器"></a>5.函数调用 - 使用机器</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1）语法：</span><br><span class="line"> 函数名（参数列表/实参列表）</span><br><span class="line"> 2）说明（）</span><br><span class="line"> 函数名 -  必须是声明过的函数</span><br><span class="line"> ()   - 固定写法</span><br><span class="line"> 参数列表   -   这的参数叫四参；实参是用来给形参赋值的</span><br><span class="line">                值1，值2，值3</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 写一个函数 ，功能是计算两个数的和</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 声明函数需要两个换行，</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">yt_sum</span><span class="params">( n1, n2)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    函数功能的说明：求两个数的和</span></span><br><span class="line"><span class="string">    :param n1:   参数说明：int 数字</span></span><br><span class="line"><span class="string">    :param n2:</span></span><br><span class="line"><span class="string">    :return:   返回值说明： None</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    print(n1+ n2)</span><br><span class="line"></span><br><span class="line">yt_sum(<span class="number">1</span>,<span class="number">99</span>)</span><br><span class="line">yt_sum(<span class="number">12345</span>,<span class="number">34567</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#写一个函数，功能是求一个数的1*2*3*....*n的和</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">yt_mur</span><span class="params">(n)</span>:</span></span><br><span class="line">    <span class="string">"""求一个数的1*2*3*....*n的"""</span></span><br><span class="line">    sum1 = <span class="number">1</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>,n+<span class="number">1</span>):</span><br><span class="line">        sum1= sum1* i</span><br><span class="line">    print(<span class="string">'乘积'</span>,sum1)</span><br><span class="line">yt_mur(<span class="number">8</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#写一个函数功能是打印10个*</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">yt_print</span><span class="params">()</span>:</span></span><br><span class="line">    print(<span class="string">'*'</span>*<span class="number">10</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">yt_print()</span><br></pre></td></tr></table></figure>
+
+<h1 id="1-函数的调用过程（重要）！！！"><a href="#1-函数的调用过程（重要）！！！" class="headerlink" title="1.函数的调用过程（重要）！！！"></a>1.函数的调用过程（重要）！！！</h1><p>####函数在声明的时候不执行函数体，调用的函数的时候才会执行函数体</p>
+<ul>
+<li>函数的调用过程：</li>
+<li>1）先回到函数声明的位置</li>
+<li>2）用实参给形参赋值（传参） - 传参要保证每个参数都有值</li>
+<li>3）执行函数体</li>
+<li>4）执行完函数体再回到函数调用的位置，接着往后执行</li>
+</ul>
+<h1 id="2-函数的参数"><a href="#2-函数的参数" class="headerlink" title="2.函数的参数"></a>2.函数的参数</h1><ul>
+<li><p>1）根据实参的写法将参数分为位置参数和关键字参数</p>
+</li>
+<li><p>位置参数：让实参的位置和形参一一对应，然后保证每个形参都有值</p>
+</li>
+<li><p>关键字参数：实参列表 以，‘形参名1=值1’，形参名2=值2，的方式来调用函数在这形参的顺序可以和声明的形参的顺序不同</p>
+</li>
+</ul>
+<h3 id="！！！注意：位置参数和关键字参数混用，位置参数必须在关键字参数前面"><a href="#！！！注意：位置参数和关键字参数混用，位置参数必须在关键字参数前面" class="headerlink" title="！！！注意：位置参数和关键字参数混用，位置参数必须在关键字参数前面"></a>！！！注意：位置参数和关键字参数混用，位置参数必须在关键字参数前面</h3><p>#关键字参数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">def qq(a,b,c):</span><br><span class="line">    print(a,b,c)</span><br><span class="line"></span><br><span class="line">qq(b=11,c=22,a=33)</span><br></pre></td></tr></table></figure>
+
+<h1 id="位置参数和关键字参数混用"><a href="#位置参数和关键字参数混用" class="headerlink" title="位置参数和关键字参数混用"></a>位置参数和关键字参数混用</h1><h1 id="2）-参数默认值"><a href="#2）-参数默认值" class="headerlink" title="2） 参数默认值"></a>2） 参数默认值</h1><ul>
+<li>声明函数的时候函数的形参可以设置默认值。<br>###！！！注意：如果有默认值和没有默认值的形参混用，没有默认值的要放前面</li>
+<li>有默认值的的参数，调用的时候可以不用传参，没有默认值的参数，调用的时候必须传参</li>
+<li>当我传参的时候，需要跳过某个或几个有默认值的参数的时候，后面的参数必须使用关键字参数<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">def func2(d=1,e=2,f=3):</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line"></span><br><span class="line">    :param d:</span><br><span class="line">    :param e:</span><br><span class="line">    :param f:</span><br><span class="line">    :return:</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    print(d,e,f)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">func2()</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h1 id="3）参数类型的说明"><a href="#3）参数类型的说明" class="headerlink" title="3）参数类型的说明"></a>3）参数类型的说明</h1><ul>
+<li>a，给参数设置默认值，默认是什么类型，参数计算什么类型</li>
+<li>b， 以参数名’类型名‘的方式什么参数类型<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">def coun1(lb:list,bb):</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    统计列表  bb的个数</span><br><span class="line">    :param lb:</span><br><span class="line">    :param bb:</span><br><span class="line">    :return:</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    bb1 = 0</span><br><span class="line">    for i in lb:</span><br><span class="line">        if i == bb:</span><br><span class="line">            bb1+=1</span><br><span class="line">    print(bb1)</span><br><span class="line"></span><br><span class="line">coun1([1,2,3,4,5,6,78,4,32,5,5,5,5,6],6)</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h1 id="4-不定长参数"><a href="#4-不定长参数" class="headerlink" title="4)不定长参数"></a>4)不定长参数</h1><ul>
+<li>a，声明函数的时候在形参前加一个*,可以将这个形参变成元祖，然后同时接受多个实参的值，可以同时接受多个位置参数的值</li>
+<li>b.声明函数的时候，在形参前面加<strong>，可以将这个形参变成字典,可以同时接受多个关键字参数的值）#  可以同时接受多个关键字参数的值）<br>####！！！注意：原则上一个函数的参数中既可以有定长的，也可以有带一个*的不定长,和带两个的</strong>的不定长； 如果同时存在一个带<em>参数和两个带**参数，带一个的</em>参数要放前面</li>
+</ul>
+<h5 id="！！！注意：一般情况下：一个函数中可以同时有定长参数和不定长参数，"><a href="#！！！注意：一般情况下：一个函数中可以同时有定长参数和不定长参数，" class="headerlink" title="！！！注意：一般情况下：一个函数中可以同时有定长参数和不定长参数，"></a>！！！注意：一般情况下：一个函数中可以同时有定长参数和不定长参数，</h5><ul>
+<li>不定长参数要放后面  ，如果出现定长参数出现在不定长参数后面，需要用到关键字参数</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">def sum2(*num1):</span><br><span class="line">    print(num1)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">sum2(1,2,3,4,5)</span><br><span class="line">sum2(1,2,3)</span><br><span class="line">sum2(1,2,3,4,5,6,6)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 练习 写一个函数求多个和，要求调用函数的时候既可以使用位置参数传参，</span><br><span class="line">#也可以用关键字传参</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def snm4(*a,**b):</span><br><span class="line">    a1 = 0</span><br><span class="line">    for i in a:</span><br><span class="line">        a1 = a1 + i</span><br><span class="line">    for i1 in b:</span><br><span class="line">        a1 = a1 + b[i1]</span><br><span class="line">    print(a1)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">snm4(1,2,3,4,d=1,e=6)</span><br></pre></td></tr></table></figure>
+
+<h1 id="1-什么是返回值"><a href="#1-什么是返回值" class="headerlink" title="1.什么是返回值"></a>1.什么是返回值</h1><ul>
+<li>返回值的作用是将函数体中产生的数据传递到函数外面</li>
+<li>返回值就是函数调用表达式的值，就是return关键字后面的值<h5 id="注意：a-函数调用表达式-调用函数的语句；他的结果就是这个函数的返回值："><a href="#注意：a-函数调用表达式-调用函数的语句；他的结果就是这个函数的返回值：" class="headerlink" title="!!!注意：a.函数调用表达式 - 调用函数的语句；他的结果就是这个函数的返回值："></a>!!!注意：a.函数调用表达式 - 调用函数的语句；他的结果就是这个函数的返回值：</h5></li>
+<li>通过函数调用表达式来换取函数的返回值</li>
+</ul>
+<h1 id="2-return关键字"><a href="#2-return关键字" class="headerlink" title="2.return关键字"></a>2.return关键字</h1><h5 id="return-只能出现在函数体中！："><a href="#return-只能出现在函数体中！：" class="headerlink" title="return 只能出现在函数体中！："></a>return 只能出现在函数体中！：</h5><ul>
+<li>当执行函数体的时候遇到return，函数直接结束，并且会将return后面的值作为函数的返回值返回；</li>
+<li>如果执行函数体的时候没有遇到return，函数的返回值是：None</li>
+</ul>
+<h1 id="3-函数的调用过程（完整版）死记！！！！！！！！！！"><a href="#3-函数的调用过程（完整版）死记！！！！！！！！！！" class="headerlink" title="3.函数的调用过程（完整版）死记！！！！！！！！！！"></a>3.函数的调用过程（完整版）死记！！！！！！！！！！</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">1)先回到函数声明的位置</span><br><span class="line">2）用实参给形参赋值 - 传参（保证每个参数都有值）</span><br><span class="line">3）执行函数体</span><br><span class="line">4）执行完函数体，确定返回值（执行完函数体中所有的语句，没有遇到return</span><br><span class="line">                        就确定返回值就是None；执行过程中遇到return</span><br><span class="line">                        就是return后面的值）</span><br><span class="line">5）回到函数调用的位置，接着往后执行。（此时函数调用表达式的值才是还是的返回值）</span><br><span class="line"></span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line"></span><br><span class="line"># 4.什么时候需要有返回值</span><br><span class="line"># 初学者的建议：只要函数的功能产生了新的数据，</span><br><span class="line">#           就可以把这个数据用返回值返回</span><br><span class="line"></span><br><span class="line"># python函数里可以有多个 返回值：return后面给多个值，用逗号隔开</span><br></pre></td></tr></table></figure>
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2019年06月02日 17:25</p>
+        <p>原始链接： <a class="post-url" href="/2019/06/02/1.什么是函数/" title="什么是函数">http://aiswl.cn/2019/06/02/1.什么是函数/</a></p>
+        <footer>
+            <a href="http://aiswl.cn">
+                <img src="/images/logo.png" alt="ml">
+                ml
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+        
+            
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;">赏</a>
+</div>
+
+<div id="reward" class="post-modal reward-lay">
+    <a class="close" href="javascript:;" id="reward-close">×</a>
+    <span class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        请我吃糖~
+        <i class="icon icon-quote-right"></i>
+    </span>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/images/wechat_code.jpg" alt="打赏二维码">
+        </div>
+        <div class="reward-select">
+            
+            <label class="reward-select-item checked" data-id="wechat" data-wechat="/images/wechat_code.jpg">
+                <img class="reward-select-item-wechat" src="/images/wechat.png" alt="微信">
+            </label>
+            
+            
+            <label class="reward-select-item" data-id="alipay" data-alipay="/images/alipay_code.jpg">
+                <img class="reward-select-item-alipay" src="/images/alipay.png" alt="支付宝">
+            </label>
+            
+        </div>
+    </div>
+</div>
+
+
+        
+    </div>
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://aiswl.cn/2019/06/02/1.什么是函数/&title=《什么是函数》 — 马磊的博客&pic=http://aiswl.cnimages/logo.png" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://aiswl.cn/2019/06/02/1.什么是函数/&title=《什么是函数》 — 马磊的博客&source=" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://aiswl.cn/2019/06/02/1.什么是函数/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《什么是函数》 — 马磊的博客&url=http://aiswl.cn/2019/06/02/1.什么是函数/&via=http://aiswl.cn" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://aiswl.cn/2019/06/02/1.什么是函数/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://aiswl.cn/2019/06/02/1.什么是函数/" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#1-什么是函数"><span class="post-toc-text">1.什么是函数</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#2-函数的分类"><span class="post-toc-text">2.函数的分类</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#自定义函数：程序员自己定义的函数，相当于自己造机器，"><span class="post-toc-text">自定义函数：程序员自己定义的函数，相当于自己造机器，</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#3-函数的定义-声明"><span class="post-toc-text">3. 函数的定义(声明)</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#4-函数体在函数声明的时候不会执行（重要）"><span class="post-toc-text">!!! 4.函数体在函数声明的时候不会执行（重要）</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#调用函数的时候才会执行函数体"><span class="post-toc-text">调用函数的时候才会执行函数体</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#5-函数调用-使用机器"><span class="post-toc-text">5.函数调用 - 使用机器</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#1-函数的调用过程（重要）！！！"><span class="post-toc-text">1.函数的调用过程（重要）！！！</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#2-函数的参数"><span class="post-toc-text">2.函数的参数</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#！！！注意：位置参数和关键字参数混用，位置参数必须在关键字参数前面"><span class="post-toc-text">！！！注意：位置参数和关键字参数混用，位置参数必须在关键字参数前面</span></a></li></ol></li></ol><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#位置参数和关键字参数混用"><span class="post-toc-text">位置参数和关键字参数混用</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#2）-参数默认值"><span class="post-toc-text">2） 参数默认值</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#3）参数类型的说明"><span class="post-toc-text">3）参数类型的说明</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#4-不定长参数"><span class="post-toc-text">4)不定长参数</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#！！！注意：一般情况下：一个函数中可以同时有定长参数和不定长参数，"><span class="post-toc-text">！！！注意：一般情况下：一个函数中可以同时有定长参数和不定长参数，</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#1-什么是返回值"><span class="post-toc-text">1.什么是返回值</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#注意：a-函数调用表达式-调用函数的语句；他的结果就是这个函数的返回值："><span class="post-toc-text">!!!注意：a.函数调用表达式 - 调用函数的语句；他的结果就是这个函数的返回值：</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#2-return关键字"><span class="post-toc-text">2.return关键字</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#return-只能出现在函数体中！："><span class="post-toc-text">return 只能出现在函数体中！：</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#3-函数的调用过程（完整版）死记！！！！！！！！！！"><span class="post-toc-text">3.函数的调用过程（完整版）死记！！！！！！！！！！</span></a></li>
+        </nav>
+    </aside>
+    
+
+<nav id="article-nav">
+  
+    <a href="/2019/06/02/什么是函数/" id="article-nav-newer" class="article-nav-link-wrap">
+
+      <span class="article-nav-title">
+        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+        
+          匿名函数
+        
+      </span>
+    </a>
+  
+  
+    <a href="/2019/06/01/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">Hello World</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style="display:none">
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style="display:none">
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2019 ml<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "http://aiswl.cn",
+      animate: true,
+      isHome: false,
+      share: true,
+      reward: 1
+  }
+</script>
+<div class="sidebar">
+    <div id="sidebar-search" title="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div id="sidebar-category" title="Categories">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag" title="Tags">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            
+        </div>
+        <div id="sidebar-menu-box-tags">
+            
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div class="mobile-header-menu-container">
+        <span class="title">Menus</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a href="/">
+                    <i class="fa fa-home"></i><span>Home</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="/archives">
+                    <i class="fa fa-archive"></i><span>Archives</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="/about">
+                    <i class="fa fa-user"></i><span>About</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile-header-tag-container">
+        <span class="title">Tags</span>
+        <div id="mobile-header-container-tags">
+            
+        </div>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+
+  <script src="/js/pop-img.js"></script>
+  <script>
+     $(".article-entry p img").popImg();
+  </script>
+
+  </div>
+</body>
+</html>
